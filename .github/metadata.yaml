@@ -1,0 +1,11 @@
+# .github/metadata.yaml
+description: "Swift implementation of RFC 9052: CBOR Object Signing and Encryption (COSE): Structures and Process."
+topics:
+  - standards
+  - rfc
+  - rfc-9052
+  - cose
+  - cbor
+homepage: "https://swift-institute.org"
+readme:
+  family: E
