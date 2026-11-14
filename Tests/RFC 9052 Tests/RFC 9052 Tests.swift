@@ -1,6 +1,5 @@
-import Testing
-
 import RFC_9052
+import Testing
 
 @Suite
 struct `RFC 9052 Tests` {

@@ -12,25 +12,25 @@ let package = Package(
         .visionOS(.v27),
     ],
     products: [
-        .library(name: "RFC 9052", targets: ["RFC 9052"]),
+        .library(name: "RFC 9052", targets: ["RFC 9052"])
     ],
     dependencies: [
         .package(
             url: "https://github.com/swift-ietf/swift-rfc-8949.git",
             branch: "main"
-        ),
+        )
     ],
     targets: [
         .target(
             name: "RFC 9052",
             dependencies: [
-                .product(name: "RFC 8949", package: "swift-rfc-8949"),
+                .product(name: "RFC 8949", package: "swift-rfc-8949")
             ]
         ),
         .testTarget(
             name: "RFC 9052 Tests",
             dependencies: [
-                .target(name: "RFC 9052"),
+                .target(name: "RFC 9052")
             ]
         ),
     ],
