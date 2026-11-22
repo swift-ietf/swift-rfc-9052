@@ -23,7 +23,7 @@ struct `Fuzz Tests` {
     func `random bytes are read as a key or refused, never crash`() {
         var random = Fuzzing(state: 0xc05e)
         for _ in 0..<50_000 {
-            _ = try? RFC_9052.Key(decoding: random.bytes(upTo: 96))
+            _ = try? IETF.RFC.`9052`.Key(decoding: random.bytes(upTo: 96))
         }
     }
 
@@ -37,7 +37,7 @@ struct `Fuzz Tests` {
                 bytes.append(UInt8.random(in: 0x00...0x17, using: &random) | (Bool.random(using: &random) ? 0x20 : 0))
                 bytes += random.bytes(upTo: 8)
             }
-            _ = try? RFC_9052.Key(decoding: bytes)
+            _ = try? IETF.RFC.`9052`.Key(decoding: bytes)
         }
     }
 }

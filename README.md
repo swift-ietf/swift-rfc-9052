@@ -1,6 +1,6 @@
 # swift-rfc-9052
 
-Use this package to read COSE keys (RFC 9052, section 7), the CBOR form in which WebAuthn authenticators and other COSE users hand over public keys. Start from `RFC_9052.Key` for one key and `RFC_9052.KeySet` for an array of them. What a key's type adds, such as an elliptic-curve key's curve and coordinates, is read with swift-rfc-9053.
+Use this package to read COSE keys (RFC 9052, section 7), the CBOR form in which WebAuthn authenticators and other COSE users hand over public keys. Start from `IETF.RFC.`9052`.Key` for one key and `IETF.RFC.`9052`.KeySet` for an array of them. What a key's type adds, such as an elliptic-curve key's curve and coordinates, is read with swift-rfc-9053.
 
 ## Laws
 

@@ -1,2 +1,5 @@
+public import IETF_RFC
 /// RFC 9052: CBOR Object Signing and Encryption (COSE), structures and process.
-public enum RFC_9052 {}
+extension IETF.RFC {
+    public enum `9052` {}
+}
